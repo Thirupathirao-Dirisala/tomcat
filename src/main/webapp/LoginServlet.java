@@ -18,7 +18,7 @@ public class LoginServlet extends HttpServlet {
 
         if ("your_username".equals(username) && "your_password".equals(password)) {
             // Redirect to a success page if authentication is successful
-            response.sendRedirect("success.jsp");
+            response.sendRedirect("home.jsp");
         } else {
             // Set an error message attribute and forward back to the login page
             request.setAttribute("errorMessage", "Invalid username or password");
